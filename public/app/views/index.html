@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <title>Google Maps API</title>
     <base href='/'>
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <script src="assets/libs/angular/angular.min.js"></script>
     <script src="assets/libs/angular-route/angular-route.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src='assets/libs/lodash/lodash.min.js'></script>
+    <script src='assets/libs/angular-google-maps/dist/angular-google-maps.min.js'></script>
     <script src="app/controllers/mainCtrl.js"></script>
     <script src="app/app.js"></script>
   </head>
-  <body class="container" ng-app="myApp" ng-controller="mainController as main">
+  <body class="container" ng-app="myApp" ng-controller="mainController">
     <div class="jumbotron text-center">
-      <h1>{{ main.message }}</h1>
+      <h1>{{ message }}</h1>
     </div>
-    <div id="googleMap"></div>
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
   </body>
 </html>
