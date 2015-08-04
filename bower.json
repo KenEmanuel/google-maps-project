@@ -1,0 +1,20 @@
+{
+  "name": "gmap",
+  "version": "0.0.0",
+  "homepage": "https://github.com/KenEmanuel/google-maps-project",
+  "authors": [
+    "Kenneth Emanuel <ken.emanuel@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-route": "~1.4.3"
+  }
+}
